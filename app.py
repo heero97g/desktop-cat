@@ -70,6 +70,7 @@ const meowPhrases = [
     "  なでなで、きもちいいニャ〜✨  ",
     "  おやつ、期待していいかニャ？  ",
     "  竹新のみりん揚はたまらんニャ～  "
+    "  早く元気になるニャ～  "
 ];
 
 let cat = {{
@@ -119,7 +120,7 @@ canvas.addEventListener('click', (e) => {{
 // メインループ
 function updateBehavior() {{
     cat.idleCounter++;
-    if (cat.idleCounter >= 150) {{ 
+    if (cat.idleCounter >= 200) {{ // 20秒したら寝る
         if (!cat.isSleeping) {{
             cat.isSleeping = true;
             cat.speechText = ""; // 寝るときはセリフを消す
